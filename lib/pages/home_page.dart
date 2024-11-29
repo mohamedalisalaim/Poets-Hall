@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
   List<Poet> poets = [];
 
   Future getPoets() async {
+    poets.clear();
     var response = await http.get(Uri.https("poetrydb.org", "author"));
     var jsonData = jsonDecode(response.body);
 
@@ -24,22 +25,25 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: FutureBuilder(
-        future: getPoets(),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.done) {
-            return ListView.builder(
-              itemCount: poets.length,
-              itemBuilder: (context, index) {
-                return PoetTile(name: poets[index].name);
-              },
-            );
-          } else {
-            return Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-        },
+          child: RefreshIndicator(
+        onRefresh: getPoets,
+        child: FutureBuilder(
+          future: getPoets(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.done) {
+              return ListView.builder(
+                itemCount: poets.length,
+                itemBuilder: (context, index) {
+                  return PoetTile(name: poets[index].name);
+                },
+              );
+            } else {
+              return const Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+          },
+        ),
       )),
     );
   }
