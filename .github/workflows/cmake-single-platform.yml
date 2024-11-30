@@ -43,4 +43,8 @@ jobs:
      - uses: actions/upload-artifact@v4
        with:
          name: release-apk
-         path: build/app/outputs/apk/release/app-release.apk
+         path: |
+           build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+           build/app/outputs/flutter-apk/app-x86_64-release.apk
+           build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
+         
