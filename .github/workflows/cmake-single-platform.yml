@@ -34,14 +34,8 @@ jobs:
          # Speed up the process
          cache: true
      # Get Flutter project dependencies
-     - name: Get flutter
-       run: flutter update
-     
      - name: Get dependencies
        run: flutter pub get
-
-     - name: update dependencies
-       run: flutter pub outdated
 
      - name: build apk
        run: flutter build apk --release --split-per-abi
