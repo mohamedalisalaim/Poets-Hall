@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:poets_hall/pages/home_page.dart';
+import 'package:poets_hall/pages/intro_page.dart';
 
 void main() {
   runApp(const PoetsHall());
@@ -10,9 +10,9 @@ class PoetsHall extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: IntroPage(),
     );
   }
 }

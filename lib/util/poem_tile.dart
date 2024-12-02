@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class PoetTile extends StatelessWidget {
-  final String name;
+class PoemTile extends StatelessWidget {
+  final String title;
+  final String linecount;
   final void Function()? onTap;
 
-  const PoetTile({
+  const PoemTile({
     super.key,
-    required this.name,
-    required this.onTap,
+    required this.title,
+    required this.linecount,
+    this.onTap,
   });
 
   @override
@@ -18,15 +20,15 @@ class PoetTile extends StatelessWidget {
         tileColor: Colors.green[400],
         textColor: Colors.white,
         title: Text(
-          name,
-          textAlign: TextAlign.start,
-          style: const TextStyle(
+          title,
+          style: TextStyle(
             fontFamily: "Margarine",
-            fontSize: 16,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
-        contentPadding: const EdgeInsets.all(8),
+        subtitle: Text("lines: $linecount"),
+        contentPadding: EdgeInsets.all(8),
         enableFeedback: true,
         onTap: onTap,
       ),
