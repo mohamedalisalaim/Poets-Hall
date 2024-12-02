@@ -21,14 +21,14 @@ class PoemTile extends StatelessWidget {
         textColor: Colors.white,
         title: Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: "Margarine",
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
         subtitle: Text("lines: $linecount"),
-        contentPadding: EdgeInsets.all(8),
+        contentPadding: const EdgeInsets.all(8),
         enableFeedback: true,
         onTap: onTap,
       ),

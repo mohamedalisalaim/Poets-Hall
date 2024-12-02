@@ -50,7 +50,7 @@ class PoetPage extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.all(8.0),
             child: ListView.builder(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               itemCount: poems.length,
               itemBuilder: (context, index) {
                 return PoemTile(
