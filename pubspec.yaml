@@ -50,7 +50,7 @@ dev_dependencies:
   flutter_lints: ^4.0.0
 
 flutter_launcher_icons:
-  android: true
+  android: "launcher_icon"
   ios: true
   image_path: "lib/assets/poet_hall.png"
   min_sdk_android: 21
