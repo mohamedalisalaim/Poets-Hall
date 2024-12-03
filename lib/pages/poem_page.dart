@@ -36,7 +36,7 @@ class PoemPage extends StatelessWidget {
             return Text(
               (lines[index] == "") ? "" : "${index + 1} - ${lines[index]}",
               style: const TextStyle(
-                height: 2.5,
+                height: 1.5,
                 fontFamily: "Margarine",
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
