@@ -1,16 +1,12 @@
 # poets_hall
+![_Screenshot_٢٠٢٤١٢٠٤_٢٠١٩٥٨](https://github.com/user-attachments/assets/2f10c8cd-049c-4a58-bd1f-30f051502268)
 
-A new Flutter project.
+Discover a World of Words
+![_Screenshot_٢٠٢٤١٢٠٤_٢٠٢٠٠٤](https://github.com/user-attachments/assets/fc0cd53d-7664-441a-a417-9492fba0113c)
 
-## Getting Started
+Dive into the timeless beauty of poetry with our app. Explore the works of renowned poets from across the ages. With a vast collection of poems, you can:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    Read classic and contemporary poems
+![_Screenshot_٢٠٢٤١٢٠٤_٢٠٢٠١٨](https://github.com/user-attachments/assets/83520b8c-d25b-4ace-b0bd-b5cf209b6c4d)
+![_Screenshot_٢٠٢٤١٢٠٤_٢٠٢٠٣٠](https://github.com/user-attachments/assets/6afda271-bff9-417d-8610-6cdc20218176)
+Unleash your inner poet and let the words inspire you!
